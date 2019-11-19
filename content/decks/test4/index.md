@@ -1,9 +1,10 @@
 ---
 title: "Test4"
-date: 2019-11-19T15:11:36-05:00
+date: 2019-11-19T17:24:16-05:00
 categories: ["Features", "Workflows", "Benefits"]
 tags: ["test4", "test6"]
 includeInFeatured: true
+draft: false
 outline:
     problem: |
         Outline the problem question/explanation for the title slide.
