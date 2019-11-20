@@ -3,6 +3,7 @@ title: "Test3"
 date: 2019-11-20T11:02:22-05:00
 categories: ["Features", "Workflows", "Benefits"]
 tags: ["test3", "test6"]
+draft: false
 outline:
     problem: |
         Outline the problem question/explanation for the title slide.
