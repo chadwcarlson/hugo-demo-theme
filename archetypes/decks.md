@@ -3,8 +3,6 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 categories: ["Features", "Workflows", "Benefits"]
 tags: ["{{ .Name }}", "test6"]
-includeInFeatured: true
-draft: false
 outline:
     problem: |
         Outline the problem question/explanation for the title slide.
