@@ -4,7 +4,6 @@ date: 2019-11-20T11:02:22-05:00
 categories: ["Features", "Workflows", "Benefits"]
 tags: ["test1", "test6"]
 draft: false
-layout: decks
 outline:
     problem: |
         Outline the problem question/explanation for the title slide.
