@@ -1,7 +1,8 @@
 ---
 title: "Test4"
-date: 2019-11-20T11:02:23-05:00
-categories: ["Features", "Workflows", "Benefits"]
+date: 2019-11-04
+categories:
+  - features
 tags: ["test4", "test6"]
 draft: false
 outline:

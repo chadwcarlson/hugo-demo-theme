@@ -1,9 +1,9 @@
 ---
-title: "Test2"
-date: 2019-11-02
+title: "Test7"
+date: 2019-11-07
 categories:
-  - features
-tags: ["test2", "test6"]
+  - workflow
+tags: ["test3", "test6"]
 draft: false
 outline:
     problem: |

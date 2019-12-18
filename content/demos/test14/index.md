@@ -1,8 +1,8 @@
 ---
-title: "Test2"
-date: 2019-11-02
+title: "Test14"
+date: 2019-11-14
 categories:
-  - features
+  - benefits
 tags: ["test2", "test6"]
 draft: false
 outline:
