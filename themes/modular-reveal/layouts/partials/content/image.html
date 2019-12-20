@@ -1,0 +1,12 @@
+{{ if eq .Name "image" }}
+  {{ if .IsNamedParams }}
+    {{ .Scratch.Set "contentSrc" (.Get "src") }}
+  {{ else }}
+    {{ .Scratch.Set "contentSrc" (.Get 0) }}
+  {{ end }}
+{{ end }}
+
+<img
+  src='{{ (.Scratch.Get "contentSrc") }}'
+  alt='{{ with (.Scratch.Get "alt") }}{{.}}{{ end }}'
+/>

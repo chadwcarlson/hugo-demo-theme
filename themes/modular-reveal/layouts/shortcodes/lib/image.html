@@ -1,0 +1,24 @@
+{{ $assetPath := "" }}
+{{ if .IsNamedParams }}
+  {{ $assetPath = .Get "name" }}
+{{ else }}
+  {{ $assetPath = .Get 0 }}
+{{ end }}
+
+{{ $basePath := $.Site.Data.common.images }}
+
+{{ $searchPath := $basePath }}
+{{ $asset := path.Base $assetPath }}
+{{ $filePath := "common/images"}}
+{{ range (split $assetPath "/") }}
+{{ with index $searchPath "manifest" }}
+  {{ index . $asset }}
+  {{ $filePath }}
+{{ else }}
+  {{ print "Adding " . }}
+  {{ $searchPath = (index $searchPath .)}}
+  {{ $filePath = (path.Join $filePath .)}}
+{{ end }}
+
+
+{{ end }}

@@ -1,0 +1,13 @@
+{{ $section := path.Dir .Page.File.Path }}
+{{ $deckContents := readFile ( printf "%s/deck.md" $section ) }}
+{{ $asideOn := 0 }}
+{{ range split $deckContents "\n" }}
+  {{ if and ( in . "aside" ) ( eq $asideOn 0 ) }}
+    {{ $asideOn = 1}}
+  {{ else if and ( in . "aside" ) ( eq $asideOn 1 ) }}
+    {{ $asideOn = 0 }}
+    <br><br>
+  {{ else if eq $asideOn 1 }}
+    {{ . }}
+  {{ end }}
+{{ end }}

@@ -1,0 +1,26 @@
+{{ $slideType := "plain" }}
+{{ if and .IsNamedParams (.Get "type") }}
+
+  {{ $slideType = (.Get "type") }}
+
+{{ else }}
+
+  {{ $ext := path.Ext (.Get 0)}}
+
+  {{ if eq $ext ".cast" }}
+    {{ $slideType = "asciicast" }}
+  {{ end }}
+
+{{ end }}
+
+{{ $mediaSlides := (slice "asciicast" "image") }}
+{{ if in $mediaSlides $slideType }}
+  {{ .Scratch.Set "contentSrc" (or (.Get "src") (.Get 0)) }}
+{{ end }}
+
+<section>
+  {{ if ne $slideType "plain" }}
+    {{ partial (print "content/" $slideType ".html") . }}
+  {{ end }}
+  {{ delimit (split .Inner "\n") "\n\n" | markdownify }}
+</section>
