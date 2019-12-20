@@ -5,6 +5,7 @@ categories:
   - features
 tags: ["test8", "test2"]
 video: N1XvFfCAXRk
+layout: single
 ---
 
 {{< generateNotes >}}

@@ -5,6 +5,7 @@ categories:
   - benefits
 tags: ["test2"]
 video: N1XvFfCAXRk
+layout: single
 ---
 
 {{< generateNotes >}}

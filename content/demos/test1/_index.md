@@ -5,6 +5,7 @@ categories:
   - workflow
 tags: ["test1"]
 video: N1XvFfCAXRk
+layout: single
 ---
 
 {{< generateNotes >}}
