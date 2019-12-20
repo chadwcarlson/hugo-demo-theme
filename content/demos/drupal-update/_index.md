@@ -6,6 +6,7 @@ categories:
 tags: ["test1", "test6"]
 video: N1XvFfCAXRk
 layout: single
+preview: preview.png
 ---
 
 {{< generateNotes >}}
