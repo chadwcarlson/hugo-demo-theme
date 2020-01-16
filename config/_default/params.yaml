@@ -1,0 +1,13 @@
+---
+dateformat: "2006-01-02 15:04 -0700"
+
+revealjs_config:
+    width: 1194
+    height: 671
+    progress: false
+
+    # none/fade/slide/convex/concave/zoom
+    transition: 'slide'
+
+colors:
+    primary: "#145CC6"

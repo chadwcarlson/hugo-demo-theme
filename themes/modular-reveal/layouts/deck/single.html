@@ -1,0 +1,10 @@
+{{- define "main" -}}
+<div class="reveal">
+  <div class="slides">
+    {{- partial "common-slides/title.html" . -}}
+    {{- partial "common-slides/problem.html" . -}}
+    {{- .Content -}}
+    {{- partial "common-slides/final.html" . -}}
+  </div>
+</div>
+{{- end -}}

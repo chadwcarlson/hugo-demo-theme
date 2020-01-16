@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Descriptive metadata -->
+  <title>{{ .Page.Title }} | {{ .Site.Title }}</title>
+
+  <meta name="description" content="{{ .Page.Description }}">
+  <meta name="author" content="Platform.sh Developer Relations">
+  <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
+  {{ if .Page.Keywords }}<meta name="keywords" content='{{ delimit .Page.Keywords "," }}'>{{ end }}
+
+  <!-- Robots -->
+  <meta name="robots" content="index,follow,noodp">
+  <meta name="googlebot" content="index,follow">
+
+  <!-- Metadata for defining progressive web apps (PWAs) -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="SaaS Demo">
+
+  <link rel="apple-touch-icon" sizes="57x57" href='{{ relURL "favicon/apple-icon-57x57.png" }}'>
+  <link rel="apple-touch-icon" sizes="60x60" href='{{ relURL "favicon/apple-icon-60x60.png" }}'>
+  <link rel="apple-touch-icon" sizes="72x72" href='{{ relURL "favicon/apple-icon-72x72.png" }}'>
+  <link rel="apple-touch-icon" sizes="76x76" href='{{ relURL "favicon/apple-icon-76x76.png" }}'>
+  <link rel="apple-touch-icon" sizes="114x114" href='{{ relURL "favicon/apple-icon-114x114.png" }}'>
+  <link rel="apple-touch-icon" sizes="120x120" href='{{ relURL "favicon/apple-icon-120x120.png" }}'>
+  <link rel="apple-touch-icon" sizes="144x144" href='{{ relURL "favicon/apple-icon-144x144.png" }}'>
+  <link rel="apple-touch-icon" sizes="152x152" href='{{ relURL "favicon/apple-icon-152x152.png" }}'>
+  <link rel="apple-touch-icon" sizes="180x180" href='{{ relURL "favicon/apple-icon-180x180.png" }}'>
+  <link rel="icon" type="image/png" sizes="192x192"  href='{{ relURL "favicon/android-icon-192x192.png" }}'>
+  <link rel="icon" type="image/png" sizes="32x32" href='{{ relURL "favicon/favicon-32x32.png" }}'>
+  <link rel="icon" type="image/png" sizes="96x96" href='{{ relURL "favicon/favicon-96x96.png" }}'>
+  <link rel="icon" type="image/png" sizes="16x16" href='{{ relURL "favicon/favicon-16x16.png" }}'>
+  <link rel="manifest" href='{{ relURL "favicon/manifest.json" }}'>
+  <meta name="msapplication-TileImage" content='{{ relURL "favicon/ms-icon-144x144.png" }}'>
+
+  <!-- Application metadata -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="application-name" content="{{ .Page.Title }}" />
+
+  <!-- Stylesheets -->
+
+    <!-- Theme styles (ordering matters) -->
+    <link rel="stylesheet" href='{{ relURL "vendor/reveal/css/reveal.css" }}'>
+
+    {{ $scssTemplate := resources.Get "style/template.scss" }}
+    {{ $style := $scssTemplate | resources.ExecuteAsTemplate "main.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    <!-- Syntax highlighting stylesheet -->
+    <link rel="stylesheet" href='{{ relURL "vendor/reveal/lib/css/zenburn.css" }}'>
+
+  <!-- Asciinema -->
+  <link rel="stylesheet" type="text/css" href='{{ relURL "vendor/asciinema/asciinema-player.css" }}' />
+  <script src='{{ relURL "vendor/asciinema/asciinema-player.js" }}'></script>
+
+  <script src='{{ relURL "js/asciinema-start.js" }}'></script>
+</head>
+
+<!-- ontouchstart="" will enable :hover and :active events on tap gesture for PWAs -->
+<body ontouchstart="">
+
+{{- block "main" . }}{{- end }}
+
+<script type="application/json" id="revealjs-config">{{ jsonify .Site.Params.revealjs | safeJS }}</script>
+<script type="application/json" id="revealjs-defaults">{{ jsonify .Site.Data.reveal_defaults | safeJS }}</script>
+
+<script src='{{ relURL "vendor/reveal/lib/js/head.min.js" }}'></script>
+<script src='{{ relURL "vendor/reveal/js/reveal.js" }}'></script>
+<script src='{{ relURL "js/reveal.js" }}'></script>
+
+</body>
+</html>
