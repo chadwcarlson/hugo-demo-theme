@@ -7,7 +7,7 @@ categories:
   - workflow
 tags:
   - drupal
-  - composer
+  - php
 video: N1XvFfCAXRk
 layout: single
 preview: drupal-composer.jpg

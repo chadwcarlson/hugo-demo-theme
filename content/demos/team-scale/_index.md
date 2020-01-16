@@ -9,7 +9,6 @@ categories:
   - workflow
 tags:
   - scaling
-  - teams
   - environments
 video: N1XvFfCAXRk
 layout: single

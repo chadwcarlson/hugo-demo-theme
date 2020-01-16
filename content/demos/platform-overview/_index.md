@@ -4,7 +4,7 @@ draft: false
 categories:
   - benefits
 tags:
-  - basics
+  - environments
 video: N1XvFfCAXRk
 layout: single
 preview: preview.jpg
