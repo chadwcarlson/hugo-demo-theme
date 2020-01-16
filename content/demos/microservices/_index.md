@@ -7,7 +7,6 @@ draft: false
 categories:
   - features
 tags:
-  - applications
   - configuration
 video: N1XvFfCAXRk
 layout: single

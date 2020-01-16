@@ -8,7 +8,6 @@ categories:
   - features
 tags:
   - php
-  - laravel
   - cli
 video: N1XvFfCAXRk
 layout: single

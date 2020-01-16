@@ -7,7 +7,7 @@ draft: false
 categories:
   - benefits
 tags:
-  - costs
+  - scaling
 video: N1XvFfCAXRk
 layout: single
 preview: control-costs.jpg

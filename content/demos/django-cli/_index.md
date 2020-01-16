@@ -9,7 +9,6 @@ categories:
 tags:
   - python
   - cli
-tags: ["test2", "test3"]
 video: N1XvFfCAXRk
 layout: single
 preview: cli-preview.jpg

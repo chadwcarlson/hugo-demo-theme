@@ -7,7 +7,7 @@ draft: false
 categories:
   - workflow
 tags:
-  - teams
+  - scaling
   - environments
 video: N1XvFfCAXRk
 layout: single
