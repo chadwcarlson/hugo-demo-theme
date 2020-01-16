@@ -11,7 +11,7 @@ tags:
   - cli
 video: N1XvFfCAXRk
 layout: single
-preview: 04-install-drupal.png
+preview: drupal-preview.jpg
 ---
 
 {{< generateNotes >}}

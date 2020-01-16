@@ -10,7 +10,7 @@ tags:
   - drupal
 video: N1XvFfCAXRk
 layout: single
-preview: 06-repo.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

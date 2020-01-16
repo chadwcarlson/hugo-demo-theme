@@ -10,7 +10,7 @@ tags:
   - composer
 video: N1XvFfCAXRk
 layout: single
-preview: composer-logo.png
+preview: drupal-composer.jpg
 ---
 
 {{< generateNotes >}}

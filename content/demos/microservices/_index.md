@@ -11,7 +11,7 @@ tags:
   - configuration
 video: N1XvFfCAXRk
 layout: single
-preview: 6-topology.png
+preview: ms-preview.jpg
 ---
 
 {{< generateNotes >}}

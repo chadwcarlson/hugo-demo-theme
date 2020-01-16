@@ -7,7 +7,7 @@ tags:
   - basics
 video: N1XvFfCAXRk
 layout: single
-preview: overview-preview.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

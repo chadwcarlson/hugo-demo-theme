@@ -12,7 +12,7 @@ tags:
   - environments
 video: N1XvFfCAXRk
 layout: single
-preview: 4-view-site-url.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

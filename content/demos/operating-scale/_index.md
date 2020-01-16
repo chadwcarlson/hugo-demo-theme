@@ -10,7 +10,7 @@ tags:
   - scaling
 video: N1XvFfCAXRk
 layout: single
-preview: preview.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

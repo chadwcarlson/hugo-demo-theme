@@ -13,7 +13,7 @@ tags:
   - environments
 video: N1XvFfCAXRk
 layout: single
-preview: 5-new-environments.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

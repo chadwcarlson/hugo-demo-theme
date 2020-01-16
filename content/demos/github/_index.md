@@ -10,7 +10,7 @@ tags:
   - integrations
 video: N1XvFfCAXRk
 layout: single
-preview: 3-branch.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

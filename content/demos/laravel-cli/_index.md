@@ -12,7 +12,7 @@ tags:
   - cli
 video: N1XvFfCAXRk
 layout: single
-preview: 04-live.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

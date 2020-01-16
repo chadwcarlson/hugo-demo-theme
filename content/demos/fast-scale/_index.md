@@ -11,7 +11,7 @@ tags:
   - scaling
 video: N1XvFfCAXRk
 layout: single
-preview: 5-set-plan-down.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

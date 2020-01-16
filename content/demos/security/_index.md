@@ -10,7 +10,7 @@ tags:
   - security
 video: N1XvFfCAXRk
 layout: single
-preview: 5-jorge-integration-branch.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

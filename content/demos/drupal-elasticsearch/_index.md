@@ -13,7 +13,7 @@ tags:
   - drupal
 video: N1XvFfCAXRk
 layout: single
-preview: elasticsearch-logo.svg
+preview: es.jpg
 ---
 
 {{< generateNotes >}}

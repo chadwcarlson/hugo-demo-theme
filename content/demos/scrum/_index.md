@@ -11,7 +11,7 @@ tags:
   - environments
 video: N1XvFfCAXRk
 layout: single
-preview: 1-branch-list.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

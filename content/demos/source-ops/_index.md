@@ -12,7 +12,7 @@ tags:
   - cli
 video: N1XvFfCAXRk
 layout: single
-preview: 07-environments.png
+preview: preview-so.jpg
 ---
 
 {{< generateNotes >}}
