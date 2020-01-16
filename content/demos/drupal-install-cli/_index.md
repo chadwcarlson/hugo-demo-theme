@@ -6,10 +6,12 @@ outline:
 draft: false
 categories:
   - features
-tags: ["test2", "test3"]
+tags:
+  - drupal
+  - cli
 video: N1XvFfCAXRk
 layout: single
-preview: 04-install-drupal.png
+preview: drupal-preview.jpg
 ---
 
 {{< generateNotes >}}

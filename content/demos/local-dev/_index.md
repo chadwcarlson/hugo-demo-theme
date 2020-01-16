@@ -7,10 +7,11 @@ outline:
 draft: false
 categories:
   - workflow
-tags: ["test2", "test3"]
+tags:
+  - local
 video: N1XvFfCAXRk
 layout: single
-preview: 03-browser.png
+preview: local-preview.jpg
 ---
 
 {{< generateNotes >}}

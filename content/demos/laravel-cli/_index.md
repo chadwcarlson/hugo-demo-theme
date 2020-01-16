@@ -6,10 +6,13 @@ outline:
 draft: false
 categories:
   - features
-tags: ["test2", "test3"]
+tags:
+  - php
+  - laravel
+  - cli
 video: N1XvFfCAXRk
 layout: single
-preview: 04-live.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

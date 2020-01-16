@@ -6,10 +6,11 @@ outline:
 draft: false
 categories:
   - benefits
-tags: ["test2", "test3"]
+tags:
+  - security
 video: N1XvFfCAXRk
 layout: single
-preview: 5-jorge-integration-branch.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

@@ -5,10 +5,12 @@ outline:
         There's a new security release of a Drupal module. I need to update fast!
 categories:
   - workflow
-tags: ["test2", "test3"]
+tags:
+  - drupal
+  - composer
 video: N1XvFfCAXRk
 layout: single
-preview: composer-logo.png
+preview: drupal-composer.jpg
 ---
 
 {{< generateNotes >}}

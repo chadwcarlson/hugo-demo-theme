@@ -7,10 +7,13 @@ outline:
 draft: false
 categories:
   - workflow
-tags: ["test2", "test3"]
+tags:
+  - scaling
+  - teams
+  - environments
 video: N1XvFfCAXRk
 layout: single
-preview: 5-new-environments.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

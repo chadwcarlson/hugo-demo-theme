@@ -8,10 +8,12 @@ outline:
 draft: false
 categories:
   - features
-tags: ["test2", "test3"]
+tags:
+  - php
+  - drupal
 video: N1XvFfCAXRk
 layout: single
-preview: elasticsearch-logo.svg
+preview: es.jpg
 ---
 
 {{< generateNotes >}}

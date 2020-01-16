@@ -6,10 +6,11 @@ outline:
 draft: false
 categories:
   - benefits
-tags: ["test2", "test3"]
+tags:
+  - scaling
 video: N1XvFfCAXRk
 layout: single
-preview: preview.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

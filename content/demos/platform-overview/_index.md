@@ -3,10 +3,11 @@ title: Platform.sh overview
 draft: false
 categories:
   - benefits
-tags: ["test2", "test3"]
+tags:
+  - basics
 video: N1XvFfCAXRk
 layout: single
-preview: overview-preview.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}

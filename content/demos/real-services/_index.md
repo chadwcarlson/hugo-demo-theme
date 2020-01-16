@@ -6,10 +6,11 @@ outline:
 draft: false
 categories:
   - benefits
-tags: ["test2", "test3"]
+tags:
+  - configuration
 video: N1XvFfCAXRk
 layout: single
-preview: services-preview.png
+preview: services-preview.jpg
 ---
 
 {{< generateNotes >}}

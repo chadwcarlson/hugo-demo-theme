@@ -6,10 +6,11 @@ outline:
 draft: false
 categories:
   - workflow
-tags: ["test2", "test3"]
+tags:
+  - environments
 video: N1XvFfCAXRk
 layout: single
-preview: 01-code-same.png
+preview: dp-preview.jpg
 ---
 
 {{< generateNotes >}}

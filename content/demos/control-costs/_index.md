@@ -6,10 +6,11 @@ outline:
 draft: false
 categories:
   - benefits
-tags: ["test2", "test3"]
+tags:
+  - costs
 video: N1XvFfCAXRk
 layout: single
-preview: control-costs.png
+preview: control-costs.jpg
 ---
 
 {{< generateNotes >}}

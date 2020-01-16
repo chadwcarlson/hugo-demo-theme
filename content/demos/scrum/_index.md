@@ -6,10 +6,12 @@ outline:
 draft: false
 categories:
   - workflow
-tags: ["test2", "test3"]
+tags:
+  - teams
+  - environments
 video: N1XvFfCAXRk
 layout: single
-preview: 1-branch-list.png
+preview: preview.jpg
 ---
 
 {{< generateNotes >}}
