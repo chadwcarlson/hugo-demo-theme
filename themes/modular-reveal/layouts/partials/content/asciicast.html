@@ -1,0 +1,9 @@
+{{ if eq .Name "asciicast" }}
+  {{ if .IsNamedParams }}
+    {{ .Scratch.Set "contentSrc" (.Get "src") }}
+  {{ else }}
+    {{ .Scratch.Set "contentSrc" (.Get 0) }}
+  {{ end }}
+{{ end }}
+
+<asciinema-player src='{{ (.Scratch.Get "contentSrc") }}'></asciinema-player>

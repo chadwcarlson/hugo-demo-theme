@@ -1,0 +1,16 @@
+{{ if (default true .Params.display_options.show_final_slide) }}
+  <section id="final" data-background='{{ relURL "images/launch-background.png" }}'>
+    <div class="two-col">
+      <a href="/">
+        <div>
+          <img src='{{ relURL "images/platform-logo-1c-black.svg" }}' alt="That's Platform.sh" class="plain" />
+        </div>
+        {{ if .Site.Data.decks.main.ipad }}
+          <p class="button">View all topics</p>
+        {{ end }}
+        <!-- <p class="button">View all topics</p> -->
+        <!-- <p class="button">{{ .Site.Data.decks.main.ipad }}</p> -->
+      </a>
+    </div>
+  </section>
+{{ end }}

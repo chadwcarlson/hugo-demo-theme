@@ -1,0 +1,12 @@
+{"version": 2, "width": 104, "height": 20, "timestamp": 1548665473, "idle_time_limit": 2.0, "env": {"SHELL": "/bin/zsh", "TERM": "xterm-256color", "USER": "robert"}}
+[0.465586, "o", "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                       \r \r"]
+[0.46698, "o", "\u001b]2;robert@MacBook-Pro-9: ~/Sites/mycomputer\u0007\u001b]1;..form-sh-demos\u0007"]
+[0.528492, "o", "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mmycomputer\u001b[00m \u001b[01;34mgit:(\u001b[31melasticsearch\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K"]
+[0.52868, "o", "\u001b[?1h\u001b=\u001b[?2004h"]
+[1.247852, "o", "platform relationships"]
+[4.648001, "o", "\u001b[?1l\u001b>"]
+[4.648222, "o", "\u001b[?2004l\r\r\n"]
+[4.649572, "o", "\u001b]2;platform relationships\u0007\u001b]1;platform\u0007"]
+[4.804327, "o", "elasticsearch:\r\n    -\r\n        username: null\r\n        password: null\r\n        service: mysearch\r\n        fragment: null\r\n        ip: 169.254.25.143\r\n        hostname: fgdtokbcgxcd5j6crvd7jmnomm.mysearch.service._.eu-2.platformsh.site\r\n        port: 9200\r\n        cluster: rnrboohk7khf4-elasticsearch-vynyzbq\r\n        host: elasticsearch.internal\r\n        rel: elasticsearch\r\n        path: null\r\n        query: {  }\r\n        scheme: http\r\n        type: 'elasticsearch:5.4'\r\n        public: false\r\n"]
+[4.814875, "o", "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                       \r \r"]
+[8.031668, "o", "\r\n"]

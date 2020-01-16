@@ -1,0 +1,7 @@
+{{ if .Params.outline.problem }}
+  {{ if (default true .Params.display_options.show_problem_slide) }}
+    <section id="problem">
+      <blockquote>{{- .Params.outline.problem -}}</blockquote>
+    </section>
+  {{ end }}
+{{ end }}
