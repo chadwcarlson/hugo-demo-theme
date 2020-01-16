@@ -6,7 +6,8 @@ outline:
 draft: false
 categories:
   - features
-tags: ["test2", "test3"]
+tags:
+  - drupal
 video: N1XvFfCAXRk
 layout: single
 preview: 06-repo.png

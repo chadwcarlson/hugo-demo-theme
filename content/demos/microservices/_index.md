@@ -6,7 +6,9 @@ outline:
 draft: false
 categories:
   - features
-tags: ["test2", "test3"]
+tags:
+  - applications
+  - configuration
 video: N1XvFfCAXRk
 layout: single
 preview: 6-topology.png

@@ -6,7 +6,10 @@ outline:
 draft: false
 categories:
   - features
-tags: ["test2", "test3"]
+tags:
+  - updates
+  - configuration
+  - cli
 video: N1XvFfCAXRk
 layout: single
 preview: 07-environments.png

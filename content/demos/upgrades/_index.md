@@ -6,7 +6,10 @@ outline:
 draft: false
 categories:
   - workflow
-tags: ["test2", "test3"]
+tags:
+  - updates
+  - configuration
+  - environments
 video: N1XvFfCAXRk
 layout: single
 preview: 4-view-site-url.png

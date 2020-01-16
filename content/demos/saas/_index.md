@@ -6,7 +6,8 @@ outline:
 draft: false
 categories:
   - benefits
-tags: ["test2", "test3"]
+tags:
+  - saas
 video: N1XvFfCAXRk
 layout: single
 preview: 2018-12-12-OEM-Webinar.014.png

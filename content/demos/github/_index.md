@@ -6,7 +6,8 @@ outline:
 draft: false
 categories:
   - workflow
-tags: ["test2", "test3"]
+tags:
+  - integrations
 video: N1XvFfCAXRk
 layout: single
 preview: 3-branch.png

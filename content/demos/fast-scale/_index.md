@@ -7,7 +7,8 @@ outline:
 draft: false
 categories:
   - workflow
-tags: ["test2", "test3"]
+tags:
+  - scaling
 video: N1XvFfCAXRk
 layout: single
 preview: 5-set-plan-down.png
