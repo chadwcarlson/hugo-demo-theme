@@ -1,12 +1,14 @@
 ---
 title: Updating Drupal with Composer
-draft: false
+outline:
+    problem: |
+        There's a new security release of a Drupal module. I need to update fast!
 categories:
-  - features
-tags: ["test1", "test6"]
+  - workflow
+tags: ["test2", "test3"]
 video: N1XvFfCAXRk
 layout: single
-preview: preview.png
+preview: composer-preview.jpg
 ---
 
 {{< generateNotes >}}

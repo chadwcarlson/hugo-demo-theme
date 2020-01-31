@@ -22,5 +22,7 @@
   {{ if ne $slideType "plain" }}
     {{ partial (print "content/" $slideType ".html") . }}
   {{ end }}
-  {{ delimit (split .Inner "\n") "\n\n" | markdownify }}
+  <!-- {{ delimit (split .Inner "\n") "\n\n" | safeHTML | markdownify }} -->
+  {{ delimit (split .Inner "\n") "\n\n" | safeHTML }}
+
 </section>

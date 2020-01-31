@@ -5,7 +5,7 @@ theme: modular-reveal
 
 pygmentsCodeFences: true
 pygmentsUseClasses: false
-pygmentsStyle: github
+pygmentsStyle: dracula
 
 enableGitInfo: true
 
@@ -13,7 +13,8 @@ enableGitInfo: true
 
 # If build on a local Hugo version > 0.60, uncomment this block to
 # render slides correctly.
-# markup:
-#   goldmark:
-#     renderer:
-#       unsafe: true
+markup:
+  # defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
