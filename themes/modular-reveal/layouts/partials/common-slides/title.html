@@ -1,5 +1,12 @@
 {{ if (default true .Params.display_options.show_title_slide) }}
   <section id="title" data-background-color='{{ .Site.Params.colors.primary }}'>
     <h1>{{ .Page.Param "title" }}</h1>
+    {{ if isset .Page.Params "notes" }}
+      {{ if isset .Params.notes "title" }}
+      <aside class="notes">
+        {{ .Params.notes.title }}
+      </aside>
+      {{ end }}
+    {{ end }}
   </section>
 {{ end }}

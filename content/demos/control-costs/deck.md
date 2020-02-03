@@ -5,59 +5,90 @@ outline:
         I don't know how popular my website will be. I want to PAYGo.
 draft: false
 type: deck
+notes:
+  title: Platform.sh comes with no upfront costs, and scaling to meet demand is very simple.
+  problem: Say you're just starting out and you want a more "Pay as you go" option.
 ---
 
 {{< slide type="asciicast" src="../assets/1-create-project.cast" >}}
 
-Spinning up 1 or 100 new projects has no upfront costs.
-No hardware. No defining a devops pipeline.
+<p>Spinning up 1 or 100 new projects has no upfront costs.</p>
+<p>No hardware. No defining a devops pipeline.</p>
 
+<aside class="notes">
+  You can spin up one or multiple projects right from the command line or from your management
+  console, with no upfront costs. You'll get a clear estimate for the monthly price of the
+  plan straight away, and receive a ready-to-go remote environment without any definition on your end.
+</aside>
 {{< /slide >}}
 
 {{< slide type="asciicast" src="../assets/2-cli-scale.cast" >}}
 
-Scaling up or down is just a button click or command line away.
+<p>Scaling up or down is just a button click</p>
+<p>or command line away.</p>
 
+<aside class="notes">
+  You can then change the size of your plan with a single command when you expect demand will be high,
+  and after your big sale return to a smaller plan the same way.
+</aside>
 {{< /slide >}}
 
 {{< slide >}}
 
-There are no capital costs (CAPEX). At all.
-All costs are on-demand operating costs (OPEX),<br />under your control.
+<p>There are no capital costs (CAPEX). At all.</p>
+<p>All costs are on-demand operating costs (OPEX), <br>under your control.</p>
 
+<aside class="notes">
+  All costs are on-demand operating costs, completely under your control.
+</aside>
 {{< /slide >}}
 
 {{< slide type="asciicast" src="../assets/3-branching.cast" >}}
 
-Who has time to setup infinite testing environments?
-We do, and it takes just a few minutes, no matter your site.
+<p>Who has time to setup infinite testing environments?</p>
+<p>We do, and it takes just a few minutes, no matter your site.</p>
 
+<aside class="notes">
+  With your plan in place, no time is spent setting up testing environments. Platform.sh
+  takes care of that for every branch you want to test, and you'll have them up and running
+  in minutes.
+</aside>
 {{< /slide >}}
 
 {{< slide type="asciicast" src="../assets/4-services-yaml.cast" >}}
 
 Want more services in your application?  Just add them.
 
+<aside class="notes">
+  There are no separate charges to add one of our many managed services to you application.
+  Just add its corresponding line of YAML to your configuration, and push to a branch to test it out.
+</aside>
 {{< /slide >}}
 
 {{< slide >}}
 
-### We handle
+<div>
+  <h3>We handle</h3>
+  <ul>
+    <li>Configuration</li>
+    <li>Security updates</li>
+    <li>Infrastructure</li>
+  </ul>
+</div>
+<div style="margin-top: 2em;">
+  <h3>You handle what matters most</h3>
+  <p>Your application</p>
+</div>
 
-* Configuration
-* Security updates
-* Infrastructure
-
-### You handle what matters most
-
-Your application
-
+<aside class="notes">
+  Platform.sh provides clear configuration, and handles all security updates and infrastructure,
+  so that you and your team can focus on what matters: your application.
+</aside>
 {{< /slide >}}
 
 {{< slide >}}
 
-## Support included
-
+<h2>Support included</h2>
 <div class="two-col top-align">
   <img src="../assets/5-create-ticket.png" style="justify-self: center; height: 450px;" alt="Create tickets using ZenDesk" />
   <ul>
@@ -66,14 +97,19 @@ Your application
   </ul>
 </div>
 
+<aside class="notes">
+  And if you get stuck anywhere along the way, we've got infrastructure support to respond to your support tickets 24/7.
+</aside>
 {{< /slide >}}
 
 {{< slide >}}
 
-No hardware to manage,
-no DevOps to coordinate,
-no servers to build
+<p>No hardware to manage,<br />no devops to coordinate,<br />no servers to build</p>
+<h3 style="margin-top: 1em;">We are your on-demand DevOps team</h3>
 
-### We are your on-demand DevOps team
-
+<aside class="notes">
+  With Platform.sh, you don't just get hosting. You get an on demand DevOps team that relieves you from
+  handling hardware and orchestrating your infrastructure, so you can get back to developing new features
+  for your application.
+</aside>
 {{< /slide >}}

@@ -3,9 +3,9 @@ languageCod: en-us
 title: Platform.sh Demos
 theme: modular-reveal
 
-pygmentsCodeFences: true
-pygmentsUseClasses: false
-pygmentsStyle: dracula
+# pygmentsCodeFences: true
+# pygmentsUseClasses: false
+# pygmentsStyle: dracula
 
 enableGitInfo: true
 
@@ -18,3 +18,13 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: monokai
+    tabWidth: 4

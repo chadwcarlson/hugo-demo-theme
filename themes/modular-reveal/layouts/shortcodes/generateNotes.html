@@ -1,5 +1,21 @@
+
 {{ $section := path.Dir .Page.File.Path }}
-{{ $deckContents := readFile ( printf "%s/deck.md" $section ) }}
+{{ $deckPage := printf "%s/deck.md" $section }}
+{{ $deckContents := readFile $deckPage }}
+
+{{ with .Site.GetPage $deckPage }}
+  {{ if isset .Params "notes" }}
+    {{ if isset .Params.notes "title" }}
+      <p class="notes">{{ .Params.notes.title }}</p>
+      <p class="notes">&nbsp;</p>
+    {{ end }}
+    {{ if isset .Params.notes "problem" }}
+      <p class="notes">{{ .Params.notes.problem }}</p>
+      <p class="notes">&nbsp;</p>
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 {{ $asideOn := 0 }}
 {{ range split $deckContents "\n" }}
   {{ if and ( in . "aside" ) ( eq $asideOn 0 ) }}
@@ -8,6 +24,6 @@
     {{ $asideOn = 0 }}
     <p class="notes">&nbsp;</p>
   {{ else if eq $asideOn 1 }}
-    <p class="notes">{{ . }}</p>
+    <p class="notes">{{ . | safeHTML }}</p>
   {{ end }}
 {{ end }}

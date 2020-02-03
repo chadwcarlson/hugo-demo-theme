@@ -45,12 +45,16 @@
     <!-- Theme styles (ordering matters) -->
     <link rel="stylesheet" href='{{ relURL "vendor/reveal/css/reveal.css" }}'>
 
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/style/opensans/opensans.css"> -->
+
     {{ $scssTemplate := resources.Get "style/template.scss" }}
     {{ $style := $scssTemplate | resources.ExecuteAsTemplate "main.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
     <!-- Syntax highlighting stylesheet -->
     <link rel="stylesheet" href='{{ relURL "vendor/reveal/lib/css/zenburn.css" }}'>
+
+    <link href='{{ relURL "vendor/reveal/lib/css/zenburn.css" }}' rel="stylesheet">
 
   <!-- Asciinema -->
   <link rel="stylesheet" type="text/css" href='{{ relURL "vendor/asciinema/asciinema-player.css" }}' />

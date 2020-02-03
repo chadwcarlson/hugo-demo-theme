@@ -2,6 +2,16 @@
   {{ if (default true .Params.display_options.show_problem_slide) }}
     <section id="problem">
       <blockquote>{{- .Params.outline.problem -}}</blockquote>
+      {{ if .Params.outline.spoiler }}
+        {{- .Params.outline.spoiler -}}
+      {{ end }}
+      {{ if isset .Page.Params "notes" }}
+        {{ if isset .Params.notes "problem" }}
+          <aside class="notes">
+            {{ .Params.notes.problem }}
+          </aside>
+        {{ end }}
+      {{ end }}
     </section>
   {{ end }}
 {{ end }}
