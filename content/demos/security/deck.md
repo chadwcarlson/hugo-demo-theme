@@ -7,7 +7,7 @@ draft: false
 type: deck
 notes:
   title: |
-    Whether your running an online store or a learning management systemes, the security of your application needs to be the highest priority.
+    Whether you're running an online store or a learning management systems, the security of your application needs to be the highest priority.
   problem: |
     Teams need to be able to know and verify that their sites are secure at all times.
 ---

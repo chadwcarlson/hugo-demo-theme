@@ -33,7 +33,11 @@ notes:
 <p>Rachel can now add further developers to the whole project.</p>
 
 <aside class="notes">
-  Adding team member Rachel as a project administrator gives her full ability to grant access to other developers across the whole project.
+  Adding team member Rachel as a project administrator gives her full ability to grant access to other developers
+  across the whole project. Here the current project owner Robert goes to his project settings under the Access tab
+  in his management console. After entering the e-mail Rachel has associated with her Platform.sh account, instead of
+  limiting her access to a single environment, he checks the project admin option. Apart from the ability to delete
+  the project, she now has all of the permissions that he has.
 </aside>
 
 {{< /slide >}}
@@ -60,6 +64,7 @@ notes:
 
 <aside class="notes">
   Which then gives Jorge the ability to add the rest of his team to that branch, as well as any child branch made from it.
+  Here we can see Jorge creating two environments for each of the developers on the Web Agency team he wants them to work on.
 </aside>
 
 {{< /slide >}}
