@@ -10,7 +10,7 @@ tags:
   - updates
   - configuration
   - environments
-video: N1XvFfCAXRk
+video: KN-B2ICzW24
 layout: single
 preview: preview.jpg
 ---

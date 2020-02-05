@@ -99,7 +99,12 @@ each new environment.
 <p>All other environments inherit the Sandbox key.</p>
 
 <aside class="notes">
-  So that each new development environment inherits a Sandbox variable, and never has access to a Production variable.   
+  So that each new development environment inherits a Sandbox variable, and never has access to a Production variable.
+  In the demo shown here, we set a variable called <code>Payment-API</code> for the <code>master</code> environment with
+  a value of <code>my-secret-key</code>. The variable will initially be inherited by all of its child branches. Once we
+  add the variable, we can see that it was indeed inherited by the staging environment. We don't want development environments
+  to use the production API key, so we'll update the variable's value for all non-production branches to instead be
+  <code>my-development-key</code>. This new value is then inherited, as can be seen here on the <code>feature-1</code> branch. 
 </aside>
 {{< /slide >}}
 
