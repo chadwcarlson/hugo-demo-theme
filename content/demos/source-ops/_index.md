@@ -10,7 +10,7 @@ tags:
   - updates
   - configuration
   - cli
-video: N1XvFfCAXRk
+video: y03aIw2nK0o
 layout: single
 preview: preview-so.jpg
 ---

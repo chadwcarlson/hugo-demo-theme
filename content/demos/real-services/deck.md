@@ -5,6 +5,11 @@ outline:
         I don't want toy demo services; I want real production services.
 draft: false
 type: deck
+notes:
+  title: |
+    A PaaS provider should be able to provide real production environments and services for developers that use it.
+  problem: |
+    There's no sense in a testing environment containing demo services that can't accomplish everything that production can.
 ---
 
 {{< slide >}}
@@ -17,7 +22,9 @@ type: deck
   <li><img src="../assets/languages/golang-logo.svg" alt="Go" class="plain" data-credit="https://www.vectorlogo.zone/logos/golang/index.html" /></li>
 </ul>
 <p style="margin-top: 0;">Every environment is configured production-ready.</p>
-
+<aside class="notes">
+  Each environment on Platform.sh is configured production-ready. Runtimes are set to the same standard,
+</aside>
 {{< /slide >}}
 
 {{< slide >}}
@@ -34,14 +41,23 @@ type: deck
 <!--        <li><img src="assets/services/varnish-logo.svg" alt="Varnish" class="plain" data-credit="https://www.vectorlogo.zone/logos/varnish-cache/index.html" /></li>-->
 </ul>
 <p style="margin-top: 0;">As is every service.</p>
-
+<aside class="notes">
+  and the same goes for each of our managed services.
+</aside>
 {{< /slide >}}
 
 {{< slide type="asciicast" src="../assets/1-postgres.cast" >}}
 Upgrading most services is trivial, too.
+<aside class="notes">
+  At any point if your application requires the newest version of any service, upgrading them in most cases is as easy as a single
+  character change in your <code>services.yaml</code> file.
+</aside>
 {{< /slide >}}
 
 {{< slide >}}
 <p>Services are exposed only to your application, not the web.</p>
 <p>That makes everything secure by default.</p>
+<aside class="notes">
+  Each service you define is exposed only to your application, not to the web, making everything secure by default.
+</aside>
 {{< /slide >}}

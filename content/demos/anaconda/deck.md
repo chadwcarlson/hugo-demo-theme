@@ -5,6 +5,9 @@ outline:
         My applications require the full Anaconda data science stack!
 draft: false
 type: deck
+notes:
+  title: Anaconda is the World’s Most Popular Python Data Science Distribution.
+  problem: This demo shows how to install the full Anaconda data science stack on Platform.sh.
 ---
 
 {{< slide >}}
@@ -45,8 +48,8 @@ conda install anaconda
 Simply include a bash script that configures the Conda environment in the `platform.app.yaml` build hook.
 
 <aside  class="notes">
-  The build hook in your .platform.app.yaml file lets you specify scripts to run when your code builds.
-  This script uses curl to get Miniconda. It then runs the conda installer, adds conda to the path,
+  The build hook in your <code>.platform.app.yaml</code> file lets you specify scripts to run when your code builds.
+  This script uses curl to get Miniconda. It then runs the Conda installer, adds Conda to the path,
   and installs the full Anaconda environment.
 </aside>
 
@@ -67,8 +70,8 @@ jupyter notebook
 Then, just activate the conda environment before you run your web app in your `start` command!
 
 <aside class="notes">
-  In the web section of .platform.app.yaml you then specify a start command which runs this script.
-  The example shown activates the conda environment and starts the jupyter notebook, a popular interactive
+  In the web section of your <code>.platform.app.yaml</code> you then specify a start command which runs this script.
+  The example shown activates the Conda environment and starts the Jupyter notebook, a popular interactive
   tool for creating rich documents and running code.
 </aside>
 

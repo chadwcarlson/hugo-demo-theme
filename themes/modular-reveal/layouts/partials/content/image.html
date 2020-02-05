@@ -6,7 +6,14 @@
   {{ end }}
 {{ end }}
 
+{{$fullScreen := .Get "full"}}
+
+
+{{ if eq $fullScreen "true" }}
+<section data-background='{{ (.Scratch.Get "contentSrc") }}' alt='{{ with (.Scratch.Get "alt") }}{{.}}{{ end }}'></section>
+{{ else }}
 <img
   src='{{ (.Scratch.Get "contentSrc") }}'
   alt='{{ with (.Scratch.Get "alt") }}{{.}}{{ end }}'
 />
+{{ end }}
