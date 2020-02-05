@@ -17,7 +17,8 @@ notes:
   <aside class="notes">
     First, use the command <code>platform create</code> to quickly create a new Platform.sh project. The command
     will prompt you to configure the project for one of our regions with as much resources as you think you
-    might need.
+    might need. The project will be created in just a few seconds, and the CLI will provide a project ID you can
+    now use to interact with it.
   </aside>
 {{< /slide >}}
 
@@ -27,6 +28,10 @@ notes:
   <aside class="notes">
     You can then use the command <code>platform environment:init</code> to initialize that project within any public GitHub
     repository. Here, we are using our Laravel template, that already includes Platform.sh's three configuration files to deploy.
+    So long as the repository contains Platform.sh configuration files, it will then build and deploy the site. First, Platform.sh
+    will run through the build hook of the application's <code>.platform.app.yaml</code> file, which defines its build process.
+    Once completed, Platform.sh will validate domains for the environment, and issue new Let's Encrypt certificates for them if not
+    present or if they will soon expire. Then the environment is created and deployed.
   </aside>
 {{< /slide >}}
 
