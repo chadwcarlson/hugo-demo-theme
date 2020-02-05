@@ -26,6 +26,9 @@ notes:
 
 <aside class="notes">
   On that environment's branch, add Elasticsearch to your project's <code>services.yaml</code> file.
+  Here in that file we define the Elasticsearch service container under the name <code>mysearch</code>.
+  We specify the <code>elasticsearch</code> type, a supported version, and finally the amount of persistent
+  disk allocated to it.
 </aside>
 {{< /slide >}}
 
@@ -33,7 +36,9 @@ notes:
 <p>The <code>relationships</code> in the <code>.platform.app.yaml</code> file give your app access to the new Elasticsearch service.</p>
 
 <aside class="notes">
-  Then update your <code>.platform.app.yaml</code> with a new relationship to access it.
+  Then update your <code>.platform.app.yaml</code> with a new relationship to access it. This new relationship, simply called
+  <code>elasticsearch</code>, repeats the name we gave the service in the <code>services.yaml</code> file and includes that
+  service's endpoint.
 </aside>
 {{< /slide >}}
 
