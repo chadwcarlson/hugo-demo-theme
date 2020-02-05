@@ -5,6 +5,11 @@ outline:
         I need scheduled updates for my Drupal apps!
 draft: false
 type: deck
+notes:
+  title: |
+    An application on Platform.sh can define a number of operations that can be applied to its source code.
+  problem: |
+    Source Operations can be fully automated, which can be useful when projects need scheduled updates applied to their applications.
 ---
 
 {{< slide >}}
@@ -15,10 +20,7 @@ type: deck
 </div>
 
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  These commands, once defined, can replace the need to push updates from a local repository by running <code>composer update</code> automatically.
 </aside>
 {{< /slide >}}
 
@@ -28,10 +30,9 @@ type: deck
 <p>and push to your <code>sourceops</code> branch.</p>
 
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  In a <code>.platform.app.yaml</code> file, the source operation <code>update</code> is defined to do exactly this. It includes the update
+  command, as well as the two commands to add and commit those updates to the repository. Adding this feature is as simple as including these  
+  lines and pushing to a branch on Platform.sh
 </aside>
 {{< /slide >}}
 
@@ -41,10 +42,8 @@ type: deck
 <p><code>platform source-operation:run update</code></p>
 
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Once the source operation has been defined, you can trigger the update to take place using the CLI command
+  <code>platform source-operation:run update</code>.
 </aside>
 {{< /slide >}}
 
@@ -56,10 +55,7 @@ type: deck
 <p>push the commit, and trigger the normal build process.</p>
 
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  As a result, the operation will execute, push the commit, and trigger the normal build process on that environment.
 </aside>
 {{< /slide >}}
 
@@ -69,10 +65,8 @@ type: deck
 <p>during the build phase.</p>
 
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Once you are satisfied with your update command, it can be modified to run automatically. Simply add an API Token to the project
+  and install the CLI during the build hook.
 </aside>
 {{< /slide >}}
 
@@ -82,10 +76,10 @@ type: deck
 <p>which syncs from Master before the operation is triggered.</p>
 
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Then define a cron job to run the source operation as often as you would like it to check for updates. It is even possible
+  to read from the <code>PLATFORM_BRANCH</code> environment variable to restrict the operation only to certain environments, such
+  as the dedicated <code>update-dependencies</code> environment shown here. Running this operation is that environments sole purpose,
+  and prior to running it syncs all code and data from <code>master</code>.
 </aside>
 {{< /slide >}}
 
@@ -95,10 +89,8 @@ type: deck
 <p>environment that will run the <code>update</code> operation each day.</p>
 
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Merge the newly defined source operation into <code>master</code>, and then create the <code>update-dependencies</code> environment that operation
+  is looking to run on. That way, your project will rebuild with updated dependencies each day when they are available.
 </aside>
 {{< /slide >}}
 
@@ -107,9 +99,6 @@ type: deck
 <p>test the daily updates and merge into production when ready.</p>
 
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Test the updates, and then merge into master as a part of the application's daily maintenance routine.
 </aside>
 {{< /slide >}}

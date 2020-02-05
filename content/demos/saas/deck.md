@@ -5,62 +5,55 @@ outline:
         How can I offer my web app as a SaaS product?
 draft: false
 type: deck
+notes:
+  title: |
+    Software as a Service, or SaaS, is a software delivery model where that software is centrally hosted and then licensed to users through some kind of subscription.
+  problem: |
+    But how can you offer your web application as a SaaS product?
 ---
 
 {{< slide >}}
 SaaS offers your customers a lot of advantages...
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  There's plenty of incentive for you and for your customers to figure out how to do deliver a SaaS product.
 </aside>
 {{< /slide >}}
 
 {{< slide type="image" src="../assets/2018-12-12-OEM-Webinar.014.png" alt="PaaS vs the rest" full="true">}}
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  By alleviating all software and hardware considerations from your users, the SaaS model provides faster time to market
+  and replaces capital costs with on-demand operating costs, all in a clear 1-stop shop solution.
 </aside>
 {{< /slide >}}
 
 {{< slide >}}
 Let's discuss single-tenant vs multi-tenant.
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  There are two major ways to implement your SaaS product: single and multi-tenancy.
 </aside>
 {{< /slide >}}
 
 {{< slide type="image" src="../assets/single-v-multi.001.png" alt="Single-tenant" full="true">}}
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Single-tenant software exists as a single instance per single customer. Data and resources are isolated for their needs, which makes
+  instances easier to customize and scale for each customer. But there are also disadvantages. A one-to-one relationship between customer
+  and SaaS instance can make it more difficult to update all instances in the fleet, and resource isolation can result in a greater cost
+  per customer to operate.
 </aside>
 {{< /slide >}}
 
 {{< slide type="image" src="../assets/single-v-multi.002.png" alt="Multi-tenant" full="true">}}
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  On the other hand, in multi-tenant SaaS products sharing data is possible across all customers from a central instance. This makes it
+  easier add new customers and can result in lower operating costs. However, multi-tenancy can be more difficult to scale, and customization
+  for individual customers becomes much more difficult. Effort will always have to be made to keep customer data segregated at the application layer.
 </aside>
 {{< /slide >}}
 
 {{< slide >}}
 <blockquote>How can I get the advantages of multi-tenant for my<br />single-tenant app?</blockquote>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  But I want it all. I want the advantages of multi-tenancy for my single-tenant application.
 </aside>
 {{< /slide >}}
 
@@ -76,10 +69,9 @@ Let's discuss single-tenant vs multi-tenant.
   </ul>
 </div>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Well, we can take a look at a case study from Open Social to get an idea of what that might look like. With Platform.sh, Open Social provides
+  a Drupal distribution for community groups, where each of their customers has their own instances. Open Social retains control of that instance,
+  and no customers are given access to their server.
 </aside>
 {{< /slide >}}
 
@@ -96,10 +88,7 @@ Let's discuss single-tenant vs multi-tenant.
   <img src="../assets/2018-12-12-OEM-Webinar.023.png" alt="Open Social has their own billing plans" />
 </div>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Open Social built their own management tool, which uses the Platform.sh API internally.
 </aside>
 {{< /slide >}}
 
@@ -116,20 +105,15 @@ Let's discuss single-tenant vs multi-tenant.
   </ul>
 </div>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  A customer's community is a unique SaaS instance powered by its own project on Platform.sh, not that they would ever need to know that that's
+  how it's done.
 </aside>
 {{< /slide >}}
 
 {{< slide >}}
 <p>The vendor, however, can use the PaaS backend for<br />update management and customizations.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Then, all of the community instances can be accessed by the vendor to manage updates and apply customizations.
 </aside>
 {{< /slide >}}
 
@@ -145,28 +129,21 @@ Let's discuss single-tenant vs multi-tenant.
   <img src="../assets/2018-12-12-OEM-Webinar.027.png" style="justify-self: center; height: 450px;" alt="Platform.sh projects are managed through Git">
 </div>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Open Social manages all the code in the PaaS fleet. Since it's all just Git in the background, they can automate it - no matter the number of
+  communities - very easily.
 </aside>
 {{< /slide >}}
 
 {{< slide >}}
 <p>The vendor gets the benefit of our multi-tenant cloud while keeping single-tenant application architecture.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  As a result, the vendor can receive all of the benefits of multi-tenancy, while keeping the advantages of a single-tenant application architecture for their customers.  
 </aside>
 {{< /slide >}}
 
 {{< slide type="image" src="../assets/merge.gif" alt="Merge" full="true">}}
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  With Platform.sh, they get the ease of single-tenant isolation, but the kind of complete control over scaling that comes
+  with multi-tenancy in the background.
 </aside>
 {{< /slide >}}

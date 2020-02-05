@@ -23,9 +23,9 @@ notes:
 {{< slide type="asciicast" src="../assets/02-init.cast" >}}
 <p>2. Initialize the new project with a public GitHub repository, using <span class="hljs">platform environment:init</span></p>
 <aside class="notes">
-  Next, you can use the CLI command <code>platform environment: init</code> along with the
+  Next, you can use the CLI command <code>platform environment:init</code> along with the
   project ID to initialize the project with an existing Drupal repository, such as our
-  Drupal 8 template. So long as they repository contains Platform.sh configuration files, it will
+  Drupal 8 template. So long as the repository contains Platform.sh configuration files, it will
   then build and deploy the site.  
 </aside>
 {{< /slide >}}

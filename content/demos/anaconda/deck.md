@@ -70,7 +70,7 @@ jupyter notebook
 Then, just activate the conda environment before you run your web app in your `start` command!
 
 <aside class="notes">
-  In the web section of <code>.platform.app.yaml</code> you then specify a start command which runs this script.
+  In the web section of your <code>.platform.app.yaml</code> you then specify a start command which runs this script.
   The example shown activates the Conda environment and starts the Jupyter notebook, a popular interactive
   tool for creating rich documents and running code.
 </aside>

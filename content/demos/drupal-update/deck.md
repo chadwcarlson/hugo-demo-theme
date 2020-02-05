@@ -31,7 +31,7 @@ Composer to the rescue
 <p><code>composer update</code>, push to a branch, profit!</p>
 <aside class="notes">
   Checkout a new branch on your local project and run <code>composer update</code> to update your dependencies.
-  Push to Platform.sh and then activate and environment to deploy the updated application.
+  Push to Platform.sh and then activate the environment to deploy the updated application.
 </aside>
 {{< /slide >}}
 

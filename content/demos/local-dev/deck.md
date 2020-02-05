@@ -17,7 +17,7 @@ notes:
 {{< slide >}}
   <p>Use any local environment, but access your services live.</p>
   <aside class="notes">
-    Because you're application may depend on a number of our managed services, your local development environment will need the same access
+    Because your application may depend on a number of our managed services, your local development environment will need the same access
     to those services that a deployed environment would have.
   </aside>
 {{< /slide >}}

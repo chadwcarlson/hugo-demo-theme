@@ -54,7 +54,7 @@ notes:
   <source src="../assets/05.mp4" type="video/mp4">
 </video>
 <aside class="notes">
-  Add another services yaml file that defines which of our managed services
+  Add another <code>services.yaml</code> file that defines which of our managed services
   you app depends on, such as a MySQL database, which can be defined in only a
   few lines of code.
 </aside>
@@ -152,7 +152,7 @@ notes:
   <source src="../assets/15.mp4" type="video/mp4">
 </video>
 <aside class="notes">
-  Just like we've helped out Magento, Symfony, and Orange.
+  Just like Magento, Symfony, and Orange have, with Platform.sh.
 </aside>
 {{< /slide >}}
 

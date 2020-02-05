@@ -46,7 +46,7 @@ relationships:
 </div>
 <aside class="notes">
   And both can be added to your Platform.sh projects with a service definition in your <code>services.yaml</code>
-  and by adding a relationship to you <code>.platform.app.yaml</code> file.
+  and by adding a relationship to your <code>.platform.app.yaml</code> file.
 </aside>
 {{< /slide >}}
 

@@ -51,7 +51,9 @@ notes:
 <aside class="notes">
   With your plan in place, no time is spent setting up testing environments. Platform.sh
   takes care of that for every branch you want to test, and you'll have them up and running
-  in minutes.
+  in minutes. Just commit your changes to the new branch, and push to the project. By default,
+  newly pushed environments do not fully deploy, but all you need to do is activate that branch's environment
+  with a single command: <code>platform environment: activate</code>.
 </aside>
 {{< /slide >}}
 
@@ -60,8 +62,13 @@ notes:
 Want more services in your application?  Just add them.
 
 <aside class="notes">
-  There are no separate charges to add one of our many managed services to you application.
-  Just add its corresponding line of YAML to your configuration, and push to a branch to test it out.
+  There are no separate charges to add one of our many managed services to your application,
+  just add its corresponding configuration. Here, we're adding Redis for
+  our application level caching by first defining it in our <code>services.yaml</code> file.
+  Then, we add a relationship between our application and the Redis service in our
+  <code>.platform.app.yaml</code> file. With those changes applied, all that's needed is to
+  commit and push to Platform.sh, and then our environment will contain the new service
+  ready for testing.
 </aside>
 {{< /slide >}}
 

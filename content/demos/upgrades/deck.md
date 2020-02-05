@@ -5,25 +5,24 @@ outline:
         Is my application compatible with that sweet new PHP 7.3?
 draft: false
 type: deck
+notes:
+  title: |
+    As you're developing with one version of a service, you may want to upgrade that service for a number of reasons.
+  problem: |
+    You may want to check compatibility with your application, with as little work as possible.
 ---
 
 {{< slide >}}
 <p>Let's find out!</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Luckily, on Platform.sh, finding out if another service version works for you is quick to test.
 </aside>
 {{< /slide >}}
 
 {{< slide type="image" src="../assets/1-make-branch.png" alt="Create a branch on Platform.sh." >}}
 <p>Create a new environment; code and all!</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Branch your production environment, and create a completely identical environment to try out the upgrade.
 </aside>
 {{< /slide >}}
 
@@ -31,10 +30,7 @@ type: deck
 <p>You can clone the whole project using Git,</p>
 <p>or the Platform.sh CLI.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Then clone the whole project locally, either through Git or through the Platform.sh CLI.
 </aside>
 {{< /slide >}}
 
@@ -42,10 +38,9 @@ type: deck
 <p>Clone the project, edit <em>one character</em>.  And git push.</p>
 <p>The entire environment is rebuilt, now on your new version.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  When changing runtime version, open up your <code>.platform.app.yaml</code> file and edit a single character to the next
+  major version. That's it. Commit and push the change, and Platform.sh will rebuild the entire application, now on that
+  newest version.
 </aside>
 {{< /slide >}}
 
@@ -53,10 +48,8 @@ type: deck
 <p style="margin-top: 2em;">Do whatever testing you need, automated or manual.</p>
 <p>Production hasn't been touched.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Production hasn't been touched at all. You can visit the environment's unique URL and do whatever testing you need to, automated
+  or manual.
 </aside>
 {{< /slide >}}
 
@@ -64,20 +57,15 @@ type: deck
 <p style="margin-top: 2em;">You know it works. You've tested it.</p>
 <p>Deploy the exact same configuration to prod in seconds.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Run it through every one until you know it works like production should. When you're satisfied, merge the upgrade, and deploy the
+  identical configuration to production in seconds.
 </aside>
 {{< /slide >}}
 
 {{< slide type="asciicast" src="../assets/6-postgres.cast" >}}
 <p>Most services can be trivially upgraded, too.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Services can be upgraded in the same way. Branch, update the configuration on that branch, push, test, and merge.
 </aside>
 {{< /slide >}}
 
@@ -91,9 +79,7 @@ type: deck
 </ul>
 <p style="margin-top: 0;">It works for any change, any language, any dependency.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  This process works exactly the same for any change to your code, and any upgrade to your language and dependencies, so you can feel free
+  to try out any change you'd like.
 </aside>
 {{< /slide >}}

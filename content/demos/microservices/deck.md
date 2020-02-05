@@ -22,7 +22,7 @@ notes:
 {{< slide >}}
   <p>Fortunately, splitting up a project is easy.</p>
   <aside class="notes">
-    If you're app has become a giant, Platform.sh's configuration makes breaking it up into separate application containers simple very straightforward.
+    If you're app has become a giant, Platform.sh's configuration makes breaking it up into separate application containers very straightforward.
   </aside>
 {{< /slide >}}
 

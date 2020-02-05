@@ -5,6 +5,11 @@ outline:
         I have 300 sites to manage.  Help!
 draft: false
 type: deck
+notes:
+  title: |
+    Operating at scale doesn't just mean meeting the demands of a single application.
+  problem: |
+    As your business grows, you may have multiple application across an entire fleet that each require diligent management.
 ---
 
 {{< slide >}}
@@ -16,10 +21,8 @@ type: deck
   <li>Support and problem resolution</li>
 </ul>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Managing fleets introduces new and large problems. How do you efficiently provision new sites? How do you manage updates for each site
+  when needed across the whole fleet? How do you control your developer's access to each of them? What's the support lifecycle for problems?
 </aside>
 {{< /slide >}}
 
@@ -29,10 +32,7 @@ type: deck
 <asciinema-player src="../assets/1-create-project.cast"></asciinema-player>
 <p>Our API is fully scriptable.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  With Platform.sh, provisioning can be completely automated since our API is fully scriptable.
 </aside>
 {{< /slide >}}
 
@@ -44,10 +44,7 @@ type: deck
   <li>Update into a testing branch or straight to prod, your choice.</li>
 </ul>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Platform.sh doesn't restrict your updates workflow at all, so you can decide to test pushed updates on dedicated testing branches.
 </aside>
 {{< /slide >}}
 
@@ -57,10 +54,8 @@ type: deck
   <asciinema-player src="../assets/2-multi-add-users.cast"></asciinema-player>
   <p>Run commands on multiple projects using the CLI or API calls.</p>
   <aside class="notes">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-    Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-    Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-    Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+    Through the CLI or our API, controlling developer access can be fully automated as well, giving you fine grained control over who
+    can contribute to which project.
   </aside>
 {{< /slide >}}
 
@@ -76,10 +71,8 @@ type: deck
   </ul>
 </div>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  And when it comes to support, Platform.sh provides 24/7 infrastructure support where you can open and share pressing tickets we can
+  escalate quickly to resolution.
 </aside>
 {{< /slide >}}
 
@@ -88,9 +81,7 @@ type: deck
 <p>Platform.sh is a one-stop solution for web hosting.</p>
 <p style="margin-top: 2em;">The more sites you need to manage,<br />the greater the benefit of our fully automatable solution.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  All of this makes Platform.sh a one-stop solution for web hosting. As the number of sites your team manages grows, the greater the
+  benefit you'll receive from the fully automatable solutions we provide.
 </aside>
 {{< /slide >}}

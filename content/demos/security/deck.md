@@ -5,35 +5,31 @@ outline:
         I need to know and verify that my site is secure.
 draft: false
 type: deck
+notes:
+  title: |
+    Whether your running an online store or a learning management systemes, the security of your application needs to be the highest priority.
+  problem: |
+    Teams need to be able to know and verify that their sites are secure at all times.
 ---
 
 {{< slide type="image" src="../assets/1-clone-branch.png" alt="Any user can clone a branch" >}}
 <p style="margin-top: 2em;">All changes to code happen through Git.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  On Platform.sh, every change to your application code, infrastructure or otherwise, has to occur through Git.
 </aside>
 {{< /slide >}}
 
 {{< slide type="asciicast" src="../assets/2-break-something.cast" >}}
 <p>Sometimes users commit broken code. But if they do...</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  This ensures that even when team members commit broken code, it can always be traced back to the source.
 </aside>
 {{< /slide >}}
 
 {{< slide type="asciicast" src="../assets/3-git-log.cast" >}}
 <p>There's no secret. It's right there in the Git log.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  So you can find out what was changed, who made that change, and when was it applied to production, all visible in the Git log.
 </aside>
 <p>Who, When, and Where.</p>
 {{< /slide >}}
@@ -42,10 +38,8 @@ type: deck
 <p>The server is read-only. No one can "fix it live" and forget it.</p>
 <p>That means even if a site is compromised, the code can't be.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Additionally, Platform.sh containers are read-only post-build, making it impossible for anyone to "fix it live" and forget it. That
+  means that even if the site has been compromised, the code can't be.
 </aside>
 {{< /slide >}}
 
@@ -56,10 +50,7 @@ type: deck
 <p>The Administrator can add Jorge to </p>
 <p>the <code>integration</code> branch as a Contributor.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  What's more, Platform.sh provides strict controls to limit who can contribute to which environments right from the beginning.
 </aside>
 {{< /slide >}}
 
@@ -67,10 +58,7 @@ type: deck
 <p>But don't worry.</p>
 <p>While this user can commit to the <code>integration</code> branch...</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  So even though you can add a user to commit to one branch,
 </aside>
 {{< /slide >}}
 
@@ -78,10 +66,8 @@ type: deck
 <p>They can't merge it to <code>master</code> without a review.</p>
 <p>No one likes broken code, even on Fridays.</p>
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  they are incapable of merging into <code>master</code> without proper review first. Because no one likes broken code,
+  even on Fridays.
 </aside>
 {{< /slide >}}
 
@@ -97,10 +83,8 @@ type: deck
 </ul>
 
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Security is on us from the start. You pick the major version for your runtimes and services, and we'll handle every
+  security update to the those services, and to the operating system for you.
 </aside>
 {{< /slide >}}
 
@@ -137,10 +121,11 @@ type: deck
 </div>
 
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  This is secure-by-design architecture at your disposal. We run hardened Linux kernels, and all packages originate from internal
+  signed repositories, and every operation we make is fully automated and logged. We keep a restrictive firewall in place where only
+  HTTP, HTTPS and SSH are allowed inside with fully isolated services. By default, all users are unprivileged to access environments
+  via SSH, and access is granted on an environment-by-environment basis. Two factor authentication can be enforced for every login to
+  your team's dashboard, and TLS certificates are provided for free for every project and environment as soon as they are created.
 </aside>
 {{< /slide >}}
 
@@ -153,9 +138,7 @@ type: deck
 <p>multiple compliance frameworks.</p>
 
 <aside class="notes">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet feugiat eros a posuere.
-  Maecenas lacinia erat eu elit bibendum, et suscipit libero viverra. Pellentesque felis magna, viverra eget pulvinar vitae, lobortis a dui.
-  Pellentesque volutpat nulla a enim rutrum laoreet. Quisque est urna, faucibus ut turpis eu, dictum mollis elit.
-  Nulla facilisi. Aenean lorem quam, laoreet ut sagittis quis, lacinia quis turpis.
+  Platform.sh also comes compliant with GDPR, BDSG, and PIPEDA, and our cloud partners are certified under multiple compliance
+  frameworks themselves.
 </aside>
 {{< /slide >}}

@@ -28,10 +28,14 @@ notes:
 <p>2. Initialize the new project with a public GitHub repository, using <code>platform environment:init</code></p>
 
 <aside class="notes">
-  Next, you can use the CLI command <code>platform environment: init</code> along with the
+  Next, you can use the CLI command <code>platform environment:init</code> along with the
   project ID to initialize the project with an existing Django repository, such as one of our
-  Django templates. So long as they repository contains Platform.sh configuration files, it will
-  then build and deploy the site.  
+  Django templates. So long as the repository contains Platform.sh configuration files, it will
+  then build and deploy the site. First, Platform.sh will run through the build hook of the application's
+  <code>.platform.app.yaml</code> file, which defines its build process, by first downloading all of its
+  dependencies defined in the <code>Pipfile.lock</code>. Once completed, Platform.sh will validate domains
+  for the environment, and issue new Let's Encrypt certificates for them if not present or if they will
+  soon expire. Then the environment is created and deployed.
 </aside>
 {{< /slide >}}
 
