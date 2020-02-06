@@ -9,5 +9,7 @@ revealjs_config:
     # none/fade/slide/convex/concave/zoom
     transition: 'slide'
 
+    highlight_theme: "zenburn"
+
 colors:
     primary: "#145CC6"

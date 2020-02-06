@@ -26,7 +26,10 @@ notes:
   Next, you can use the CLI command <code>platform environment:init</code> along with the
   project ID to initialize the project with an existing Drupal repository, such as our
   Drupal 8 template. So long as the repository contains Platform.sh configuration files, it will
-  then build and deploy the site.  
+  then build and deploy the site. First, Platform.sh will run through the build hook of the
+  application's <code>.platform.app.yaml</code> file which defines its build process. Once completed,
+  Platform.sh will validate domains for the environment, and issue new  Let's Encrypt certificates for them
+  if they not present or if they will soon expire. Then the environment is created and deployed.
 </aside>
 {{< /slide >}}
 
