@@ -45,7 +45,7 @@ conda activate base
 conda install anaconda
 {{< /highlight >}}
 
-Simply include a bash script that configures the Conda environment in the `platform.app.yaml` build hook.
+<p>Simply include a bash script that configures the Conda environment in the <code>platform.app.yaml</code> build hook.</p>
 
 <aside  class="notes">
   The build hook in your <code>.platform.app.yaml</code> file lets you specify scripts to run when your code builds.
@@ -67,7 +67,7 @@ conda activate base
 jupyter notebook
 {{< /highlight>}}
 
-Then, just activate the conda environment before you run your web app in your `start` command!
+<p>Then, just activate the conda environment before you run your web app in your <code>start</code> command!</p>
 
 <aside class="notes">
   In the web section of your <code>.platform.app.yaml</code> you then specify a start command which runs this script.

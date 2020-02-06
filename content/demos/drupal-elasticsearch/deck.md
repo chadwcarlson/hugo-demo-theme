@@ -29,30 +29,7 @@ Platform.sh fully supports both Elasticsearch and Solr
 
 {{< slide >}}
 
-<div>
-  <p>Add three lines to <code>services.yaml</code></p>
-  <pre><code class="yaml" data-trim>
-elasticsearch:
-  type: elasticsearch:6.5
-  disk: 512
-  </code></pre>
-</div>
-<div style="margin-top: 2em;">
-  <p>Add one line to <code>.platform.app.yaml</code></p>
-  <pre><code class="yaml" data-trim>
-relationships:
-  elasticsearch: 'elasticsearch:elasticsearch'
-  </code></pre>
-</div>
-<aside class="notes">
-  And both can be added to your Platform.sh projects with a service definition in your <code>services.yaml</code>
-  and by adding a relationship to your <code>.platform.app.yaml</code> file.
-</aside>
-{{< /slide >}}
-
-{{< slide >}}
-
-Add three lines to `services.yaml`
+<p>Add three lines to <code>services.yaml</code></p>
 
 {{< highlight yaml >}}
 elasticsearch:
@@ -60,7 +37,7 @@ elasticsearch:
     disk: 512
 {{< /highlight>}}
 
-Add one line to `.platform.app.yaml`
+<p>Add one line to <code>.platform.app.yaml</code></p>
 
 {{< highlight yaml >}}
 relationships:
@@ -71,7 +48,7 @@ relationships:
 
 {{< slide >}}
 
-Install Drupal modules
+<p>Install Drupal modules</p>
 
 {{< highlight bash >}}
 composer require drupal/elasticsearch_connector drupal/search_api

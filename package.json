@@ -1,0 +1,19 @@
+{
+  "name": "hugo-demos",
+  "version": "1.0.0",
+  "description": "Platform.sh Demos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@lab.plat.farm:devrel/docs/hugo-demos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "tiny-slider": "^2.9.2"
+  }
+}
