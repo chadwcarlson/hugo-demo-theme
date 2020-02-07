@@ -9,7 +9,7 @@ categories:
 tags:
   - python
   - cli
-video: rvXiGWXZPsg
+video: xmyqJkkAH0A
 layout: single
 preview: cli-preview.jpg
 ---
