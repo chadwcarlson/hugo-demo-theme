@@ -9,7 +9,7 @@ categories:
 tags:
   - drupal
   - cli
-video: UVP5W0hi0j4
+video: B4raiNN6qpU
 layout: single
 preview: drupal-preview.jpg
 ---

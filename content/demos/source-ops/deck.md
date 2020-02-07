@@ -32,7 +32,7 @@ notes:
 <aside class="notes">
   In a <code>.platform.app.yaml</code> file, the source operation <code>update</code> is defined to do exactly this. It includes the update
   command, as well as the two commands to add and commit those updates to the repository. Adding this feature is as simple as including these  
-  lines and pushing to a branch on Platform.sh
+  lines and pushing to a branch on Platform.sh.
 </aside>
 {{< /slide >}}
 
