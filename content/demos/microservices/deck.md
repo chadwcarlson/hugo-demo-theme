@@ -39,7 +39,10 @@ notes:
   <p>2 - Add your new application in its own directory</p>
   <aside class="notes">
     You can then move a new application, such as your API backend to its own subdirectory, one that will contain its own
-    <code>.platform.app.yaml</code> file inside of it.
+    <code>.platform.app.yaml</code> file inside of it. Here, we’re defining the backend application to use the Node.js 10
+    runtime. It installs its dependencies during the build hook with <code>npm install</code> and contains a single relationship
+    to a RabbitMQ service. The app’s start command uses PM2 to run <code>index.js</code>, and inside that file we can define a
+    simple web server that listens on the Platform.sh-defined port to serve some HTML.
   </aside>
 {{< /slide >}}
 
