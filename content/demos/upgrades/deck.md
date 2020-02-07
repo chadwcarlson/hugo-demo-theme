@@ -2,7 +2,7 @@
 title: Easy version upgrades
 outline:
     problem: |
-        Is my application compatible with that sweet new PHP 7.3?
+        Is my application compatible with that sweet new PHP 7.4?
 draft: false
 type: deck
 notes:
