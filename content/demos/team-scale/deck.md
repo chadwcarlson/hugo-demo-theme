@@ -36,8 +36,7 @@ notes:
   Adding team member Rachel as a project administrator gives her full ability to grant access to other developers
   across the whole project. Here the current project owner Robert goes to his project settings under the Access tab
   in his management console. After entering the e-mail Rachel has associated with her Platform.sh account, instead of
-  limiting her access to a single environment, he checks the project admin option. Apart from the ability to delete
-  the project, she now has all of the permissions that he has.
+  limiting her access to a single environment, he checks the project admin option. 
 </aside>
 
 {{< /slide >}}
