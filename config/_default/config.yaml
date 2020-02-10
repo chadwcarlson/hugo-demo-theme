@@ -1,7 +1,7 @@
 baseURL: "/"
 languageCod: en-us
 title: Platform.sh Demos
-theme: modular-reveal
+# theme: modular-reveal
 
 # pygmentsCodeFences: true
 # pygmentsUseClasses: false

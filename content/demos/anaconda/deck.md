@@ -28,7 +28,7 @@ notes:
 
 {{< slide >}}
 
-{{< highlight bash >}}
+{{< highlight yaml >}}
 #!/bin/bash
 
 # Download the latest Miniconda3 release and name the file `conda.sh`
