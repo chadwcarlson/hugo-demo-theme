@@ -28,7 +28,7 @@ notes:
 
 {{< slide >}}
 
-{{< highlight yaml >}}
+{{< reveal-highlight lang="bash" >}}
 #!/bin/bash
 
 # Download the latest Miniconda3 release and name the file `conda.sh`
@@ -43,7 +43,7 @@ bash conda.sh -b -p $PLATFORM_APP_DIR/conda
 # Activate the conda environment and install the full Anaconda environment
 conda activate base
 conda install anaconda
-{{< /highlight >}}
+{{< /reveal-highlight >}}
 
 <p>Simply include a bash script that configures the Conda environment in the <code>platform.app.yaml</code> build hook.</p>
 
@@ -57,7 +57,7 @@ conda install anaconda
 
 {{< slide >}}
 
-{{< highlight bash >}}
+{{< reveal-highlight lang="bash" >}}
 #!/bin/bash
 
 # Activate the conda environment that was created in the build hook
@@ -65,7 +65,7 @@ conda activate base
 
 # Run whatever commands you need from Anaconda
 jupyter notebook
-{{< /highlight>}}
+{{< /reveal-highlight>}}
 
 <p>Then, just activate the conda environment before you run your web app in your <code>start</code> command!</p>
 

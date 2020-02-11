@@ -54,7 +54,7 @@
     <!-- Syntax highlighting stylesheet -->
     <link rel="stylesheet" href='{{ relURL "vendor/reveal/lib/css/zenburn.css" }}'>
 
-    <link href='{{ relURL "vendor/reveal/lib/css/zenburn.css" }}' rel="stylesheet">
+    <!-- <link href='{{ relURL "vendor/reveal/lib/css/zenburn.css" }}' rel="stylesheet"> -->
 
   <!-- Asciinema -->
   <link rel="stylesheet" type="text/css" href='{{ relURL "vendor/asciinema/asciinema-player.css" }}' />
@@ -71,7 +71,7 @@
 <script type="application/json" id="revealjs-config">{{ jsonify .Site.Params.revealjs | safeJS }}</script>
 <script type="application/json" id="revealjs-defaults">{{ jsonify .Site.Data.reveal_defaults | safeJS }}</script>
 
-<script src='{{ "vendor/reveal/lib/js/head.min.js" | relURL }}'></script>
+<!-- <script src='{{ "vendor/reveal/lib/js/head.min.js" | relURL }}'></script> -->
 <script src='{{ relURL "vendor/reveal/js/reveal.js" }}'></script>
 <script src='{{ relURL "js/reveal.js" }}'></script>
 

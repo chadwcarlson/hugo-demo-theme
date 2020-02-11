@@ -31,18 +31,18 @@ Platform.sh fully supports both Elasticsearch and Solr
 
 <p>Add three lines to <code>services.yaml</code></p>
 
-{{< highlight yaml >}}
+{{< reveal-highlight lang="yaml" >}}
 elasticsearch:
     type: elasticsearch:6.5
     disk: 512
-{{< /highlight>}}
+{{< /reveal-highlight >}}
 
 <p>Add one line to <code>.platform.app.yaml</code></p>
 
-{{< highlight yaml >}}
+{{< reveal-highlight lang="yaml" >}}
 relationships:
     elasticsearch: 'elasticsearch:elasticsearch'
-{{< /highlight>}}
+{{< /reveal-highlight >}}
 
 {{< /slide >}}
 
@@ -50,9 +50,9 @@ relationships:
 
 <p>Install Drupal modules</p>
 
-{{< highlight bash >}}
+{{< reveal-highlight lang="bash" >}}
 composer require drupal/elasticsearch_connector drupal/search_api
-{{< /highlight>}}
+{{< /reveal-highlight >}}
 
 <aside class="notes">
   Then you can install the Drupal modules to your application, and push.
@@ -74,7 +74,7 @@ composer require drupal/elasticsearch_connector drupal/search_api
 
 <p>Drop some glue code into <code>settings.php</code></p>
 
-{{< highlight php >}}
+{{< reveal-highlight lang="php" >}}
 // Update these values to the relationship name (from .platform.app.yaml)
 // and the machine name of the server from your Drupal configuration.
 $relationship_name = 'elasticsearch';
@@ -87,7 +87,7 @@ if ($platformsh->hasRelationship($relationship_name)) {
 $config['elasticsearch_connector.cluster.' . $es_server_name]['url'] =
     $platformsh->formattedCredentials($relationship_name, 'drupal-elastic');
 }
-{{< /highlight>}}
+{{< /reveal-highlight >}}
 
 <aside class="notes">
   Finally, add some glue code to your <code>settings.php</code> using the relationship

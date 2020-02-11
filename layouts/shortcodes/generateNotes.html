@@ -7,11 +7,11 @@
   {{ if isset .Params "notes" }}
     {{ if isset .Params.notes "title" }}
       <p class="notes">{{ .Params.notes.title }}</p>
-      <!-- <p class="notes">&nbsp;</p> -->
+      <p class="notes">&nbsp;</p>
     {{ end }}
     {{ if isset .Params.notes "problem" }}
       <p class="notes">{{ .Params.notes.problem }}</p>
-      <!-- <p class="notes">&nbsp;</p> -->
+      <p class="notes">&nbsp;</p>
     {{ end }}
   {{ end }}
 {{ end }}
@@ -24,19 +24,13 @@
   {{ else if and ( in . "aside" ) ( eq $asideOn 1 ) }}
     {{ $asideOn = 0 }}
     </p>
-    <!-- <p class="notes">&nbsp;</p> -->
+    <p class="notes">&nbsp;</p>
 
   {{ else if eq $asideOn 1 }}
-    <!-- {{ $content := . | safeHTML }} -->
-    <!-- <p class="notes">{{ . | safeHTML }}</p> -->
     {{ $splitContent := split . "\n"  }}
 
     {{ range $splitContent }}{{ . | safeHTML }}{{ end }}
-
-    <!-- <p class="notes"> -->
-      <!-- {{ $splitContent  }} -->
-    <!-- </p> -->
-    <!-- <p class="notes">{{ split $content "\n" }}</p> -->
+    
   {{ end }}
 
 {{ end }}
