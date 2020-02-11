@@ -6,12 +6,10 @@
 {{ with .Site.GetPage $deckPage }}
   {{ if isset .Params "notes" }}
     {{ if isset .Params.notes "title" }}
-      <p class="notes">{{ .Params.notes.title }}</p>
-      <p class="notes">&nbsp;</p>
+      <p class="notes">{{ .Params.notes.title }}</p>      
     {{ end }}
     {{ if isset .Params.notes "problem" }}
-      <p class="notes">{{ .Params.notes.problem }}</p>
-      <p class="notes">&nbsp;</p>
+      <p class="notes">{{ .Params.notes.problem }}</p>      
     {{ end }}
   {{ end }}
 {{ end }}
@@ -23,14 +21,13 @@
     <p class="notes">
   {{ else if and ( in . "aside" ) ( eq $asideOn 1 ) }}
     {{ $asideOn = 0 }}
-    </p>
-    <p class="notes">&nbsp;</p>
+    </p>    
 
   {{ else if eq $asideOn 1 }}
     {{ $splitContent := split . "\n"  }}
 
     {{ range $splitContent }}{{ . | safeHTML }}{{ end }}
-    
+
   {{ end }}
 
 {{ end }}
