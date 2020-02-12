@@ -1,5 +1,5 @@
 ---
-title: Use Elasticsearch with Drupal
+title: How to use Elasticsearch with Drupal
 outline:
     problem: |
         Elasticsearch rocks. But can I use it with Drupal?

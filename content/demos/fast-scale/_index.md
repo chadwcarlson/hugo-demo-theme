@@ -1,5 +1,5 @@
 ---
-title: Scaling on demand
+title: How to scale your Platform.sh projects to meet demand
 outline:
     problem: |
         We have a big sale tomorrow.

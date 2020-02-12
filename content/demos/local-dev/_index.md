@@ -1,5 +1,5 @@
 ---
-title: Flexible options for development
+title: Connecting your local development environment to Platform.sh
 outline:
     problem: |
         I want to start developing fast,

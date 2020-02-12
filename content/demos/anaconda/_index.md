@@ -1,5 +1,5 @@
 ---
-title: Running Anaconda environments
+title: How to run Anaconda on Platform.sh
 draft: false
 categories:
   - benefits

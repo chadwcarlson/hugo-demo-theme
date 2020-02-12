@@ -1,5 +1,5 @@
 ---
-title: The tool for scrum
+title: How do I manage a complex development workflow for my team?
 outline:
     problem: |
         I have many developers, but only one test server.
