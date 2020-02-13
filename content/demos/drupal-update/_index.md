@@ -1,5 +1,5 @@
 ---
-title: Updating Drupal with Composer
+title: How to update Drupal with Composer
 outline:
     problem: |
         There's a new security release of a Drupal module. I need to update fast!

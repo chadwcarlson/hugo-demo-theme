@@ -1,5 +1,5 @@
 ---
-title: Integrate with GitHub, Bitbucket, or GitLab
+title: How to integrate Platform.sh with GitHub, Bitbucket, or GitLab
 outline:
     problem: |
         I want to use pull requests, but still stage my changes.

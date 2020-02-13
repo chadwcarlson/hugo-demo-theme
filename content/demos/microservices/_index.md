@@ -1,5 +1,5 @@
 ---
-title: Microservices
+title: Splitting your monolithic application into microservices
 outline:
     problem: |
         My monolith application is getting too big to handle.

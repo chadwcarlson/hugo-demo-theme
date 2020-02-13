@@ -1,5 +1,5 @@
 ---
-title: Dev vs Prod
+title: How to keep your development environments in sync with prod
 outline:
     problem: |
         I want my Dev, Test and Stage environments to be identical to Production... but not too identical!

@@ -1,5 +1,5 @@
 ---
-title: Drupal 8 Multi-site
+title: How to manage Drupal 8 Multi-site
 outline:
     problem: |
         What about Drupal multi-site?

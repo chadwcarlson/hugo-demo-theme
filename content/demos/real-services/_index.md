@@ -1,5 +1,5 @@
 ---
-title: Production environments and services
+title: What service types does Platform.sh support?
 outline:
     problem: |
         I don't want toy demo services; I want real production services.

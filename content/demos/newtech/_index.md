@@ -1,5 +1,5 @@
 ---
-title: Try new technologies and architectures
+title: How to add new services to your Platform.sh application
 outline:
     problem: |
         I'd like to test Elasticsearch with my app.

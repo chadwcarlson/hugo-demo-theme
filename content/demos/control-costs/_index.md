@@ -1,5 +1,5 @@
 ---
-title: Control costs
+title: Controlling costs with Platform.sh as your virtual DevOps team
 outline:
     problem: |
         I don't know how popular my website will be. I want to PAYGo.

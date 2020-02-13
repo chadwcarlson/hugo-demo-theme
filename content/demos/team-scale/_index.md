@@ -1,5 +1,5 @@
 ---
-title: Add new team members
+title: How do I onboard new developers to my team?
 outline:
     problem: |
         We hired some new people.

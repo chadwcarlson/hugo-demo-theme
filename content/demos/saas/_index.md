@@ -1,5 +1,5 @@
 ---
-title: SaaS on Platform.sh
+title: How Platform.sh provides white-label tools to power your SaaS application
 outline:
     problem: |
         How can I offer my web app as a SaaS product?

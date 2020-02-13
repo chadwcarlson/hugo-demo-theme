@@ -1,5 +1,5 @@
 ---
-title: Django 2 with the Platform.sh CLI
+title: How to launch a Django 2 project with the Platform.sh CLI
 outline:
     problem: |
         I want a new Django site, really fast!

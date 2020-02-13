@@ -1,5 +1,5 @@
 ---
-title: Installing Drupal with the Platform.sh CLI
+title: How to install Drupal with the Platform.sh CLI
 outline:
     problem: |
         I want a new Drupal 8 site, really fast!

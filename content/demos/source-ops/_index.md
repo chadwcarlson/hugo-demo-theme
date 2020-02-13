@@ -1,5 +1,5 @@
 ---
-title: Composer Updates with Source Operations
+title: How can I make my applications self-updating with Source Operations?
 outline:
     problem: |
         I need scheduled updates for my Drupal apps!
