@@ -1,4 +1,18 @@
 
+# Platform.sh Demos
+
+Platform.sh Demos is a Hugo project. It is NOT at this time connected to a project on Platform.sh, but is instead pulled in as a submodule to the main marketing website at `accounts/platform.sh.website.new`.
+
+## Running locally
+
+Clone the repo, then run:
+
+```
+npm install
+hugo serve
+```
+
+Because of how this submodule is being pulled in, there is no `home` template defined for demos. If you want to preview the deck, visit `localhost:1313/demos` for a list of all categorized demos. Individual pages are at `/demos/<demo-name>`, and the decks themselves are at `/demos/<demo-name>/deck`.
 
 ## Development
 
