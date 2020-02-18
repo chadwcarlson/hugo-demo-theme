@@ -10,7 +10,6 @@ categories:
   - workflow
 tags:
   - configuration
-video: N1XvFfCAXRk
 layout: single
 ---
 

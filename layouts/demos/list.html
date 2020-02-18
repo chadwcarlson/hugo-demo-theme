@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Page.Title }} | {{ .Site.Title }}</title>
+  <style>
+
+    body {
+      margin-left: 50px;
+      font-size: 18px;
+    }
+
+    blockquote {
+      background-color: pink;
+      padding: 20px;
+      margin: 0;
+      margin-top: 20px;
+      max-width: 40%;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+      margin-bottom: 100px;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    h1 {
+      margin-bottom: 100px;
+    }
+
+    .notes-section {
+      width: 80%;
+      margin-bottom: 100px;
+    }
+
+    .youtube {
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Demos index page (/demos)  -->
+{{ if not .Dir }}
+
+  <h1>{{ .Title }}</h1>
+
+  <!-- Access list of demos in data/demos/demos.yaml -->
+  {{ $cats := .Site.Data.demos.demos.categories }}
+
+  <!-- Define empty Scratch/dict to group decks by category -->
+  {{ $cats3 := newScratch }}
+  {{ range $cats }}
+    {{ $cats3.Set . slice }}
+  {{ end }}
+
+  <!-- Set aside a slice to display warnings for new uncategorized decks -->
+  {{ $other := slice }}
+
+  {{ range .Pages }}
+    {{ $page := . }}
+    {{ $pageCats := .Params.categories }}
+
+    <!-- If categories not defined, asign to 'other' slice to show warning -->
+    {{ if not ( isset .Params "categories" ) }}
+      {{ $other = $other | append . }}
+    {{ end }}
+
+    <!-- Else, assign demo Page to correct category -->
+    {{ range $cats }}
+        {{ if in $pageCats . }}
+          {{ $cats3.Add . $page }}
+        {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Creating table with titles and links for each category -->
+  {{ range $cats }}
+    <h2> {{ humanize . }}</h2>
+    <table>
+      <tr>
+        <th>Demo (subdirectory at <code>/demos/</code>)</th>
+        <th>Single Page (<code>title</code> in <code>_index.md</code> front matter)</th>
+        <th>Deck (<code>title</code> in <code>deck.md</code> front matter)</th>
+      </tr>
+      {{ range ($cats3.Get . )}}
+        {{ if not .Params.draft }}
+          <tr>
+            <td>{{ index ( split .Dir "/" ) 1 }}</td>
+            <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+            {{ $deckB := (printf "/%sdeck.md" .Dir) }}
+            {{ with .GetPage $deckB }}
+              <td><a href="{{ .Permalink }}">{{ .Title }}</td>
+            {{ end }}
+          </tr>
+        {{ end }}
+      {{ end }}
+    </table>
+
+  {{ end }}
+
+  <!-- Warning/reminder to include category in _index.md front matter -->
+  {{ if gt ( len $other ) 0 }}
+    <h2>Uncategorized</h2>
+
+    {{ range $other }}
+      {{ $deckUC := (printf "/%sdeck.md" .Dir) }}
+      {{ with .GetPage $deckUC }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+      {{ end }}
+    {{ end }}
+
+    <blockquote>
+
+    In order for this demo to show up on the Marketing site's "Featured Demos" section, add a category to a <code>categories</code> key in the demo's <code>_index.md</code> front matter.
+    <br><br>
+    Use one of the following categories:
+    <br><br>
+    <code>
+    categories:<br>
+      {{ range $cats }}
+      &nbsp;&nbsp;&nbsp;- {{ . }}<br>
+      {{ end }}
+    </code>
+
+    </blockquote>
+
+  {{ end }}
+
+
+
+  <p><b>Public demos:</b>{{ len ($cats3.Get "workflow")}}</p>
+  <p><b>Draft demos:</b></p>
+  <p><b>Total demos:</b> {{ len .Pages }}</p>
+
+
+{{ else }}
+
+  <!-- These templates really should be separated, but keeping them together (i.e. not defining
+  a separate index.html template) keeps this submodule theme from overriding the main website index -->
+
+  <!-- Here: Single demo page template (/demos/<demo-name>), for new deck development/DevRel -->
+
+  <h1>{{ .Title }}</h1>
+
+  <!-- Back button to all demos index page -->
+  {{ with ( .GetPage .Section ) }}
+      <a href="{{ .Permalink }}">Back to all demos</a>
+  {{ end }}
+
+  <!-- List tags for a sanity check -->
+  <p>
+    <b>Tags:</b>
+    <ul>
+      {{ range .Params.tags }}
+        <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </p>
+
+  <!-- iFrame using current demo's adjacent deck.md file -->
+  <h2>Slideshow</h2>
+
+  {{ $pageDeck := ( printf "%sdeck" .Dir ) }}
+  {{ with .GetPage $pageDeck }}
+
+    <p><a href="{{ .Permalink }}">View full screen</a><p>
+
+    <div style="text-align: center;">
+      <iframe width="1120" height="630" src="{{ .Permalink }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+  {{ end }}
+
+  <!-- YouTube video, using the _index.md's 'video' front matter parameter -->
+  <h2>Video</h2>
+  {{ if isset .Params "video" }}
+    <div style="text-align: center;">
+      <iframe width="1120" height="630" src="https://www.youtube.com/embed/{{ .Params.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  {{ else }}
+    <!-- Includes a reminder to set this value if missing -->
+    <blockquote>
+      Please set the <code>video</code> key in the <code>_index.md</code> front matter to the YouTube ID where the recorded demo exists.
+      <br><br>
+      <b>Example:</b>
+      <br><br>
+      &nbsp;&nbsp;&nbsp;<code>video: N1XvFfCAXRk</code>
+    </blockquote>
+  {{ end }}
+
+
+  <!-- Notes section: the .Content of an _index.md file is generated with the 'generateNotes' shortcode.  -->
+  <h2>Notes</h2>
+  <div class="notes-section">
+    {{ if gt ( len .Content) 0 }}
+      {{ .Content }}
+    {{ else }}
+
+    <!-- 'generateNotes' works by parsing out 'aside' blocks from a 'deck.md' file. If len(.Content) = 0, displays a warning
+    since notes/these blocks were not defined.-->
+    <blockquote>
+      Please include slide notes in the <code>aside</code> sections for each slide in your <code>deck.md</code> file.
+    </blockquote>
+
+    {{ end }}
+  </div>
+
+
+{{ end }}
+
+
+
+</body>
+</html>
